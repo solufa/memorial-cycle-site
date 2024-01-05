@@ -20,4 +20,5 @@ jobs:
       - run: npm install
         if: steps.npm-cache.outputs.cache-hit != 'true'
       - run: npm run lint
+      - run: npm run generate:path
       - run: npm run typecheck

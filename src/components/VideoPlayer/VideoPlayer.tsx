@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { staticPath } from '../../lib/$path';
 import styles from './VideoPlayer.module.css';
 
 export const VideoPlayer = (props: { scrollTop: number }) => {
@@ -15,7 +16,7 @@ export const VideoPlayer = (props: { scrollTop: number }) => {
       <video
         ref={videoElm}
         className={styles.video}
-        src="./video/30sec.mp4"
+        src={staticPath.video.$30sec_mp4}
         preload="auto"
         muted
         loop
