@@ -15,7 +15,7 @@ export const VideoPlayer = (props: { scrollTop: number }) => {
       <video
         ref={videoElm}
         className={styles.video}
-        src="/video/30sec.mp4"
+        src="./video/30sec.mp4"
         preload="auto"
         muted
         loop
