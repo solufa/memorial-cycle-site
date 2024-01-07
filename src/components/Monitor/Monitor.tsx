@@ -8,11 +8,11 @@ export const Monitor = (props: { children: ReactNode }) => {
       <div className={styles.filter} style={{ top: 0, left: '100%' }} />
       <div className={styles.filter} style={{ top: '100%', right: 0 }} />
       <div className={styles.filter} style={{ bottom: 0, right: '100%' }} />
+      <div className={styles.frame}>{props.children}</div>
       <div className={styles.speed}>
         <span style={{ fontSize: 64 }}>16</span>
         <span style={{ fontSize: 40 }}>km/h</span>
       </div>
-      <div className={styles.frame}>{props.children}</div>
     </div>
   );
 };

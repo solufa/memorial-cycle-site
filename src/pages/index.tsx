@@ -1,5 +1,6 @@
 import type { UIEvent } from 'react';
 import { useRef, useState } from 'react';
+import { Machine } from '../components/Machine/Machine';
 import { Monitor } from '../components/Monitor/Monitor';
 import { VideoPlayer } from '../components/VideoPlayer/VideoPlayer';
 import styles from './index.module.css';
@@ -14,12 +15,16 @@ const Home = () => {
       <Monitor>
         <div ref={scrollElm} className={styles.container} onScroll={setScroll}>
           <div className={styles.main}>
-            <div className={`${styles.whiteText} ${styles.desc}`}>
-              足と映像が連動して楽しい
-              <br />
-              毎日続けられるエアロバイク
+            <div className={styles.firstView}>
+              <div className={`${styles.whiteText} ${styles.desc}`}>
+                足と映像が連動して楽しい
+                <br />
+                毎日続けられるエアロバイク
+              </div>
+              <div className={`${styles.whiteText} ${styles.title}`}>想い出サイクル</div>
             </div>
-            <div className={`${styles.whiteText} ${styles.title}`}>想い出サイクル</div>
+            <div className={styles.spacer} />
+            <Machine />
           </div>
         </div>
       </Monitor>

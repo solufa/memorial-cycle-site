@@ -11,9 +11,26 @@
 .main {
   width: 1200px;
   max-width: 100%;
-  min-height: 3000px;
   padding: 24px;
   margin: 0 auto;
+}
+
+.main::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  content: '';
+  border: 25px solid transparent;
+  border-top-color: #fff;
+  border-right-width: 80px;
+  border-left-width: 80px;
+  translate: calc(-50% + 4px) 0;
+}
+
+.firstView {
+  min-height: 100vh;
 }
 
 .whiteText {
@@ -30,4 +47,8 @@
 .title {
   margin-top: 24px;
   font-size: 80px;
+}
+
+.spacer {
+  height: 50vh;
 }
