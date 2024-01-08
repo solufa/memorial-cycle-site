@@ -11,7 +11,7 @@
 .main {
   width: 1200px;
   max-width: 100%;
-  padding: 24px;
+  padding: 48px 24px;
   margin: 0 auto;
 }
 
@@ -50,5 +50,5 @@
 }
 
 .spacer {
-  height: 50vh;
+  height: 70vh;
 }

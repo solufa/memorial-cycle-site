@@ -29,7 +29,7 @@ export const VideoPlayer = (props: { kmph: number }) => {
       <video
         ref={videoRef}
         className={styles.video}
-        src={staticPath.video.$30sec_mp4}
+        src={staticPath.video.$30sec_5000_mp4}
         preload="auto"
         muted
         loop

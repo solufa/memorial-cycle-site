@@ -1,0 +1,27 @@
+.whiteText {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  text-shadow: -2px 2px 1px #000c;
+}
+
+.card {
+  max-width: 800px;
+  padding: 16px 0 24px;
+  margin: 0 auto;
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  background: #fffd;
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+}
+
+.price {
+  margin: 0 4px;
+  font-size: 40px;
+  color: #f00;
+}

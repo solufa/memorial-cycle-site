@@ -1,8 +1,10 @@
 import type { UIEvent } from 'react';
 import { useEffect, useRef, useState } from 'react';
 import { Chair } from '../components/Chair/Chair';
+import { Contact } from '../components/Contact/Contact';
 import { Machine } from '../components/Machine/Machine';
 import { Monitor } from '../components/Monitor/Monitor';
+import { Movie } from '../components/Movie/Movie';
 import { VideoPlayer } from '../components/VideoPlayer/VideoPlayer';
 import styles from './index.module.css';
 
@@ -12,7 +14,7 @@ const Home = () => {
     current: { time: Date.now(), top: 0 },
     prev: { time: Date.now() - 1000, top: 0 },
   });
-  const [pps, setPps] = useState(0);
+  const [pps, setPps] = useState(4000);
   const kmph = pps * 0.0025;
 
   const onScroll = (e: UIEvent<HTMLDivElement, globalThis.UIEvent>) => {
@@ -58,6 +60,10 @@ const Home = () => {
             <Machine />
             <div className={styles.spacer} />
             <Chair />
+            <div className={styles.spacer} />
+            <Movie />
+            <div className={styles.spacer} />
+            <Contact />
           </div>
         </div>
       </Monitor>

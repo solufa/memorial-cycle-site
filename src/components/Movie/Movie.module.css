@@ -1,0 +1,21 @@
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  text-shadow: -2px 2px 1px #000c;
+}
+
+.content {
+  margin-top: 68px;
+  text-align: center;
+}
+
+.content > iframe {
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 560 / 315;
+  border: 16px solid #fff;
+  border-radius: 8px;
+  box-shadow: -2px 2px 1px #0008;
+}
