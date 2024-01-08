@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  gap: 24px;
+}
+
+.image {
+  width: 40%;
+  height: 70vh;
+  object-fit: contain;
+}
+
+.content {
+  flex: 1;
+}
