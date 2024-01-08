@@ -6,6 +6,10 @@
   text-shadow: -2px 2px 1px #000c;
 }
 
+.whiteText span {
+  display: inline-block;
+}
+
 .card {
   max-width: 800px;
   padding: 16px 0 24px;
@@ -24,4 +28,15 @@
   margin: 0 4px;
   font-size: 40px;
   color: #f00;
+}
+
+@media screen and (max-width: 640px) {
+  .whiteText {
+    font-size: 24px;
+  }
+
+  .card {
+    padding: 16px;
+    font-size: 20px;
+  }
 }

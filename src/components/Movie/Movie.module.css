@@ -6,6 +6,10 @@
   text-shadow: -2px 2px 1px #000c;
 }
 
+.title > span {
+  display: inline-block;
+}
+
 .content {
   margin-top: 68px;
   text-align: center;
@@ -18,4 +22,18 @@
   border: 16px solid #fff;
   border-radius: 8px;
   box-shadow: -2px 2px 1px #0008;
+}
+
+@media screen and (max-width: 640px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .content {
+    margin-top: 48px;
+  }
+
+  .content > iframe {
+    border: 8px solid #fff;
+  }
 }

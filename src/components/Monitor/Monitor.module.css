@@ -54,3 +54,26 @@
   text-align: right;
   text-shadow: -2px 2px 1px #000c;
 }
+
+.value {
+  font-size: 64px;
+}
+
+.unit {
+  font-size: 40px;
+}
+
+@media screen and (max-width: 640px) {
+  .speed {
+    right: 32px;
+    bottom: 20px;
+  }
+
+  .value {
+    font-size: 40px;
+  }
+
+  .unit {
+    font-size: 24px;
+  }
+}

@@ -27,3 +27,24 @@
   border-radius: 8px;
   backdrop-filter: blur(4px);
 }
+
+@media screen and (max-width: 640px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    width: 100%;
+    padding: 0;
+    margin-top: 16px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+}

@@ -49,6 +49,30 @@
   font-size: 80px;
 }
 
+.title > span {
+  display: inline-block;
+}
+
 .spacer {
   height: 70vh;
+}
+
+@media screen and (max-width: 640px) {
+  .desc {
+    margin-top: 0;
+    font-size: 16px;
+  }
+
+  .title {
+    margin-top: 24px;
+    font-size: 48px;
+  }
+
+  .main::after {
+    display: none;
+  }
+
+  .spacer {
+    height: 50vh;
+  }
 }

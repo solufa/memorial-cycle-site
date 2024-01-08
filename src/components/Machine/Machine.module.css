@@ -36,3 +36,24 @@
   font-size: 36px;
   color: #f00;
 }
+
+@media screen and (max-width: 640px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    width: 100%;
+    padding: 0;
+    margin-top: 16px;
+  }
+
+  .text {
+    margin-top: 16px;
+  }
+}

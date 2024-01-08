@@ -3,7 +3,11 @@ import styles from './Movie.module.css';
 export const Movie = () => {
   return (
     <div>
-      <div className={styles.title}>FullHDで世界の美しい景色を配信</div>
+      <div className={styles.title}>
+        <span>FullHDで</span>
+        <span>世界の美しい</span>
+        <span>景色を配信</span>
+      </div>
       <div className={styles.content}>
         <iframe
           src="https://www.youtube.com/embed/wM0ZHwXHAjo?si=MtAFCHL0xb6wWYb6&amp;start=27"

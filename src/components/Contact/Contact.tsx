@@ -4,8 +4,14 @@ export const Contact = () => {
   return (
     <div>
       <div className={styles.whiteText}>
-        <div>2週間無料お試しレンタル実施中!!</div>
-        <div>効果を現場で実感してください</div>
+        <div>
+          <span>2週間無料お試し</span>
+          <span>レンタル実施中!!</span>
+        </div>
+        <div>
+          <span>効果を現場で</span>
+          <span>実感してください</span>
+        </div>
       </div>
       <div className={styles.card}>
         <div>

@@ -10,8 +10,8 @@ export const Monitor = (props: { kmph: number; children: ReactNode }) => {
       <div className={styles.filter} style={{ bottom: 0, right: '100%' }} />
       <div className={styles.frame}>{props.children}</div>
       <div className={styles.speed}>
-        <span style={{ fontSize: 64 }}>{props.kmph}</span>
-        <span style={{ fontSize: 40 }}>km/h</span>
+        <span className={styles.value}>{props.kmph}</span>
+        <span className={styles.unit}>km/h</span>
       </div>
     </div>
   );

@@ -54,7 +54,10 @@ const Home = () => {
                 <br />
                 毎日続けられるエアロバイク
               </div>
-              <div className={`${styles.whiteText} ${styles.title}`}>想い出サイクル</div>
+              <div className={`${styles.whiteText} ${styles.title}`}>
+                <span>想い出</span>
+                <span>サイクル</span>
+              </div>
             </div>
             <div className={styles.spacer} />
             <Machine />
